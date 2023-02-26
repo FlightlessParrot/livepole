@@ -1,0 +1,72 @@
+
+.group-left-fly-enter{
+    position: relative;
+    right: 400px;
+    opacity: 0;
+}
+
+.group-left-fly-enter-active{
+    position: relative;
+    right: 0px;
+    opacity: 1 !important;;
+    transition: all 1000ms
+}
+
+.group-left-fly-enter-done{
+    position: relative;
+    right: 0px;
+    opacity: 1 !important;
+}
+.group-left-fly-exit{
+    position: relative;
+    right: 0px;
+    opacity: 1;
+}
+.group-left-fly-exit-active{
+    position: relative;
+    left: 400px;
+    opacity: 0;
+    transition: all 1000ms
+}
+.group-left-fly-exit-done{
+    position: relative;
+    left: 400px;
+    opacity: 1;
+}
+
+.appear-enter{
+    opacity: 0 !important;
+}
+
+.appear-enter-active, .appear-enter-done{
+    opacity: 1 !important;
+    transition: all 1000ms
+}
+
+.fru-enter{
+    position: relative;
+    right: 600px;
+    opacity: 0 !important;
+
+}
+.fru-enter-active, .fru-enter-done{
+    position: relative;
+    right: 0px;
+    top: 0px;
+    opacity: 1 !important;
+    transition: all 1s;
+}
+
+.fru-exit{
+    position: relative;
+    left: 0px;
+    opacity: 1 !important;
+    
+}
+.fru-exit-active, .fru-exit-done{
+   
+        position: relative;
+        left: 600px;
+        opacity: 0 !important;
+        transition: all 0.8s;
+}

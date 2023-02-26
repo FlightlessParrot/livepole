@@ -12,7 +12,7 @@ export default function HamburgerMenu()
 
     return(
         <>
-        <button onClick={toggle} className='menuButton'><img src='images/icons/hamburger.png' alt='otwórz menu'/></button>
+        <button onClick={toggle} className='menuButton'><img src='/images/icons/hamburger.png' alt='otwórz menu'/></button>
         <nav style={visible ? {visibility: visible} : {visibility: 'hidden'}}>
             <NavLink to='/'>LivePole</NavLink>
             <NavLink to='/products'>Produkty</NavLink>

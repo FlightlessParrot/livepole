@@ -1,17 +1,35 @@
 @use './colors.scss';
+@forward './main.scss';
+@forward './contact';
+@forward './product.scss';
+
 body{
-    background-color: gray;
+    font-family: 'Asap';
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
+    overflow-x: hidden;
+    background-color: colors.$marine;
+    color: colors.$white;
+    @media  screen and (min-width: 1060px) {
+        font-size: 1.2em;
+    }
 }
 
-.menuButton{
-    position:fixed;
+#root{
+    display: flex;
+    flex-direction: column;
+}
+.menuButton {
+    position: fixed;
     right: 20px;
     top: 20px;
     z-index: 10;
-    background: none;
+    background: rgba(white,0.3);
+    &:hover{
+        cursor: pointer;
+    }
 }
+
 nav{
     position: fixed;
     padding: 20px 20px 20px 20px;
@@ -20,12 +38,13 @@ nav{
     height: 100vh;
     width: 25vw;
     min-width: 250px;
-    background-color: rgba(white,0.5);
+    background-color: rgba(white,0.8);
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     row-gap: 30px;
+    z-index: 9;
     a{
         font-family: 'Jomolhari';
         color: colors.$blackFont;
@@ -33,6 +52,10 @@ nav{
         font-size: 40px;
         width:fit-content;
         padding-right: 30px;
+        &:hover{
+            margin-left: 30px;
+            transition: all 0.5s;
+        }
     }
     .active{
         color: colors.$marine;
@@ -42,24 +65,56 @@ nav{
 video{
     position: absolute;
     top: 0px;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     z-index: 1;
-    source{
-        height: 100vh;
-        width: 100vw;
+    object-fit: cover;
+}
+.button{
+    border: 2px solid colors.$marine;
+    background-color: white;
+    color: colors.$blackFont;
+    min-width: 140px;
+    border-radius: 25px;
+    min-height: 60px;
+    font-weight: bold;
+    font-size: 1em;
+    &:hover{
+        box-shadow: 10px 10px 10px black;
+        transform: rotate(360deg);
+        transition: all 0.5s;
     }
 }
-.video-div{
-    position: relative;
-    top: 0px;
-    min-height: 100vh;
-    min-width: 100vw;
+footer{
+    @media screen and (max-width: 1059px)
+    {display: none}
+        
+    
+    background-color: white;
+.foot_data{
+display: flex;
+justify-content: space-between;
+color: colors.$blackFont;
+padding: 20px 40px 20px 10px;
 
-    img{
-        position: absolute;
-        top: 30px;
-        left: 30px;
-        z-index: 2;
+div{
+    width:4px;
+    background-color: colors.$marine;
+    
+}
+}
+
+}
+.line{
+    height: 12px;
+    background-color: colors.$marine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    div{
+        background-color: white;
+        height: 4px;
+        width: inherit;
     }
 }

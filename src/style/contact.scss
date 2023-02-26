@@ -1,0 +1,115 @@
+@use './predefine';
+@use './colors';
+
+#contact-top-div {
+    @extend %top-div;
+    background: url('../../public/images/contact.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 40px;
+    @media screen and (max-width: 1059px) {
+        padding-left: 0px;
+    }
+    h1 {
+        font-size: 4em;
+        opacity: 0.8;
+
+        @media screen and (max-width: 1059px) {
+            font-size: 3em;
+            margin-left:20px;
+        }
+    }
+
+    img {
+        position: absolute;
+        bottom: 40px;
+        left: 40px;
+
+        @media screen and (max-width: 1059px) {
+            width: 150px;
+            ;
+        }
+    }
+}
+
+#contact-data {
+    background-color: white;
+    color: colors.$blackFont;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1059px) {
+        flex-direction: column;
+    }
+
+    .contact-elements {
+        flex-basis: 40%;
+        flex-shrink: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        padding: 40px 20px 20px 40px;
+        ;
+        row-gap: 20px;
+
+        .contact-element {
+            display: flex;
+            align-items: center;
+            column-gap: 20px;
+            opacity: 0;
+
+            img {
+                width: 80px;
+            }
+        }
+
+
+    }
+    .line{
+        display: none;
+        @media screen and (max-width: 1059px) {
+            display: flex;
+        }
+    }
+    .vert-line {
+        width: 4px;
+        height: 300px;
+        background-color: colors.$marine;
+
+        @media screen and (max-width: 1059px) {
+            display: none;
+        }
+    }
+
+    #order {
+        flex-basis: 40%;
+        flex-shrink: 1;
+        font-size: 1.5em;
+        @media screen and (max-width: 1059px) {
+            font-size: 1.2em;
+        }
+        * {
+            margin: 20px 0px 20px 0px;
+            @media screen and (max-width: 1059px) {
+                margin: 20px 20px 20px 20px;
+            }
+        }
+        img{
+            @media screen and (max-width: 1059px) {
+                width:150px
+            }
+        }
+    }
+
+}
+
+.map_parent {
+    .map {
+        width: 100vw;
+        height: 100vh;
+    }
+}

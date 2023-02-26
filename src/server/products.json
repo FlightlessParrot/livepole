@@ -1,0 +1,29 @@
+[
+    {
+    "id": 0,
+    "name": "LIVEPOLE I GENERACJA",
+    "shortText": "Zasilanie 12V, 24V do wyboru płynna regulacja prędkości obrotu, sterowanie pilotem bezprzewodowym, uchwyt montażowy (na stałe), moduł nożny [pedał na przewodzie] regulacja wysokości zanurzenia 32cm podświetlenie wskaźnika kierunku, produkt fabryczny, gwarancja, faktura Vat,dostępne zamówienie montażu na łodzi.",
+    "fullText": "",
+    "mainPhoto": "/images/products/0/I gen 3.png",
+    "allPhotos": ["/images/products/0/Igen5.png","/images/products/0/I gen 2.png", "/images/products/0/I gen 3.png", "/images/products/0/I gen 4.png", "/images/products/0/I gen.png"]
+
+}  ,
+{
+    "id": 1,
+    "name": "LIVEPOLE II GENERACJA",
+    "shortText": "Funkcja SKANOWANIE - praca automatyczna  - ciągłe obracanie się sztycy - wyzwolenie funkcji poprzez jednoczesne naciśnięcie dwóch pedałów, zasilanie 12V, 24V do wyboru, płynna regulacja prędkości obrotu, sterowanie pilotem bezprzewodowym, uchwyty montażowe, sterowanie nożne - moduł nożny [pedał na przewodzie], regulacja wysokości zanurzenia 32cm, podświetlenie wskaźnika kierunku, produkt fabryczny, gwarancja, faktura Vat, dostępne zamówienie montażu na łodzi.",
+    "fullText": "",
+    "mainPhoto": "/images/products/1/3.png",
+    "allPhotos":  ["/images/products/1/1.png","/images/products/1/2.png", "/images/products/1/3.png", "/images/products/1/4.png", "/images/products/1/5.png", "/images/products/1/6.png", "/images/products/1/7.png", "/images/products/1/8.png", "/images/products/1/9.png", "/images/products/1/10.png"]
+
+},
+{
+    "id": 2,
+    "name": "LIVEPOLE III GENERACJA",
+    "shortText": "Funkcja SKANOWANIE - praca automatyczna  - ciągłe obracanie się sztycy - wyzwolenie funkcji poprzez dodatkowy przycisk w module nożnym.- podświetlane strzałki kierunkowe pracy, zasilanie 12V, 24V do wyboru- płynna regulacja prędkości obrotu, sterowanie pilotem bezprzewodowym, uchwyty montażowe, sterowanie nożne - moduł nożny [pedał na przewodzie]- regulacja wysokości zanurzenia 32cm, podświetlenie wskaźnika kierunku, produkt fabryczny, gwarancja, faktura Vat, dostępne zamówienie montażu na łodzi.",
+    "fullText": "",
+    "mainPhoto": "/images/products/2/2.png",
+    "allPhotos": ["/images/products/2/1.png","/images/products/2/2.png", "/images/products/2/3.png", "/images/products/2/4.png", "/images/products/2/5.png"]
+
+}  
+]
