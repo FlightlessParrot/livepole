@@ -69,6 +69,8 @@
 
     .product-image {
         display: flex;
+        position: relative;
+        top: 0px;
         align-items: center;
         justify-content: center;
         grid-row: 1/2;
@@ -76,7 +78,7 @@
         padding: 20px 20px 20px 20px;
         overflow: hidden;
 
-        img {
+        >img {
             object-fit: contain;
             box-shadow: 8px 8px 15px black;
             width: 90%;
@@ -86,6 +88,26 @@
                 max-height: 300px;
                 height: fit-content;
             }
+        }
+        >div{
+            transform: rotate(-15deg);
+            @extend %red-label;
+            position: absolute;
+          
+            @media screen and (min-width: 1060px)
+            {
+              bottom: 50px;
+            left: 60px;  
+            }
+            
+           
+            @media screen and (max-width: 1059px)
+            {
+            bottom: 30px;
+            right: 10px;
+            left: none;
+            }
+          
         }
     }
 
@@ -186,7 +208,7 @@
             transition: all 0.5s;
         }
     }
-    p {
+    section {
         @media screen and (max-width: 1059px) {
             padding: 10px 10px 10px 10px;
         }
@@ -253,28 +275,46 @@
             right: 0px;
         }
     }
-
+    .red-label{
+        @extend %red-label;
+        width: fit-content;
+        align-self: center;
+        justify-self: center;
+        &:hover{
+            transform: scale(110%);
+            box-shadow: 6px 6px 8px black;
+            transition: all 0.6s;
+        }
+    }
 }
 
 #safety{
  p{
+    @media screen and (max-width: 1059px) {
+        padding: 10px 10px 10px 10px;
+    }
     font-size: 1.2em;
         margin: 80px 0px 80px 0px;
         @media screen and (max-width: 1059px) {
             margin: 30px 0px 30px 0px;
         }
     }
+    overflow-x: hidden;
 }
 
 .procedure-div{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    column-gap: 20px;
+    align-items: start;
+    
     @media screen and (max-width: 1059px) {
         flex-direction: column;
         padding: 20px 20px 20px 20px;
         row-gap: 20px;
     }
     .procedure{
+        box-shadow: 10px 10px 15px black;;
         background-color: white;
     position: relative;
     top: 0px;

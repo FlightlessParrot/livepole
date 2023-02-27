@@ -12,10 +12,8 @@ export default function ProductData(params) {
   };
   const [value, dispatch] = useReducer(reducer, InitValue);
   function reducer(state, action) {
-  
     const leng = element[0].allPhotos.length;
     if (action === "next") {
-
       const newState =
         state.number === leng - 1
           ? { image: element[0].allPhotos[0], number: 0 }
@@ -65,7 +63,19 @@ export default function ProductData(params) {
             {">"}
           </button>
         </div>
-        <p>{(element[0].fullText === "" ? element[0].shortText : element[0].fullText)}</p>
+        < section dangerouslySetInnerHTML={{__html: 
+          (element[0].fullText === ""
+            ? element[0].shortText
+            : element[0].fullText)}} ></section>
+        
+        <div className="red-label">
+          <img
+            src="/images/logo-uprp.png"
+            alt="logo urzędu patentowego"
+            loading="lazy"
+          />
+          <b>Produkt chroniony</b>
+        </div>
       </div>
     </>
   );

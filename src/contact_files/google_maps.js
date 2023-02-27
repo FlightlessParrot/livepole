@@ -23,7 +23,7 @@ function Map()
 {
    const center= useMemo(()=>({lat:53.96378750944353, lng: 18.535494717730284}),[])
    
-    return(<GoogleMap zoom={16} center={center}  mapContainerClassName='map'>
+    return(<GoogleMap zoom={13} center={center}  mapContainerClassName='map'>
        <Marker position={center} icon={'/images/icons/marker.png'}></Marker>
         </GoogleMap>)
 }

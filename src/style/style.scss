@@ -3,34 +3,37 @@
 @forward './contact';
 @forward './product.scss';
 
-body{
+body {
     font-family: 'Asap';
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     overflow-x: hidden;
     background-color: colors.$marine;
     color: colors.$white;
-    @media  screen and (min-width: 1060px) {
+    @media screen and (min-width: 1060px) {
         font-size: 1.2em;
     }
 }
 
-#root{
+#root {
     display: flex;
     flex-direction: column;
+ 
 }
+
 .menuButton {
     position: fixed;
     right: 20px;
     top: 20px;
     z-index: 10;
-    background: rgba(white,0.3);
-    &:hover{
+    background: rgba(white, 0.3);
+
+    &:hover {
         cursor: pointer;
     }
 }
 
-nav{
+nav {
     position: fixed;
     padding: 20px 20px 20px 20px;
     top: 0px;
@@ -38,31 +41,35 @@ nav{
     height: 100vh;
     width: 25vw;
     min-width: 250px;
-    background-color: rgba(white,0.8);
+    background-color: rgba(white, 0.8);
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: center;
     row-gap: 30px;
     z-index: 9;
-    a{
+
+    a {
         font-family: 'Jomolhari';
         color: colors.$blackFont;
         text-decoration: none;
         font-size: 40px;
-        width:fit-content;
+        width: fit-content;
         padding-right: 30px;
-        &:hover{
+
+        &:hover {
             margin-left: 30px;
             transition: all 0.5s;
         }
     }
-    .active{
+
+    .active {
         color: colors.$marine;
         border-bottom: 2px solid colors.$marine;
     }
 }
-video{
+
+video {
     position: absolute;
     top: 0px;
     height: 100%;
@@ -70,7 +77,8 @@ video{
     z-index: 1;
     object-fit: cover;
 }
-.button{
+
+.button {
     border: 2px solid colors.$marine;
     background-color: white;
     color: colors.$blackFont;
@@ -79,40 +87,50 @@ video{
     min-height: 60px;
     font-weight: bold;
     font-size: 1em;
-    &:hover{
+
+    &:hover {
         box-shadow: 10px 10px 10px black;
         transform: rotate(360deg);
         transition: all 0.5s;
     }
 }
-footer{
-    @media screen and (max-width: 1059px)
-    {display: none}
-        
-    
+
+footer {
+    @media screen and (max-width: 1059px) {
+        display: none
+    }
+
+
     background-color: white;
-.foot_data{
-display: flex;
-justify-content: space-between;
-color: colors.$blackFont;
-padding: 20px 40px 20px 10px;
 
-div{
-    width:4px;
-    background-color: colors.$marine;
-    
-}
-}
+    img {
+        align-self: center;
+    }
+
+    .foot_data {
+        display: flex;
+        justify-content: space-between;
+        color: colors.$blackFont;
+        padding: 20px 40px 20px 10px;
+
+        div {
+            width: 4px;
+            background-color: colors.$marine;
+
+        }
+    }
 
 }
-.line{
+
+.line {
     height: 12px;
     background-color: colors.$marine;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    div{
+
+    div {
         background-color: white;
         height: 4px;
         width: inherit;

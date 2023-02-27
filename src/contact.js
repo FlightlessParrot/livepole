@@ -23,7 +23,11 @@ export default function Contact()
         },
         {
             photo:'/images/icons/home.png',
-            text: <>adres: ul. T. Kościuszki 112, <br/>83-250 Starogard Gdański'</>
+            text: <>Wyłączny dystrybutor: <br></br> R-TECH Roman Miłkowski <br/>
+
+            83-200 Starogard Gdański <br />
+            
+            Pomorska 11c</>
         },
         {
             photo:'/images/icons/fb-100.png',
