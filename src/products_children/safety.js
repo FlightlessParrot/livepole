@@ -1,12 +1,13 @@
 import Procedure from "../product_files/procedure";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Line from "../universal_files/line";
 import {  useEffect, useRef, useState } from "react";
 import { CSSTransition } from "react-transition-group";
-
+import Carusel from "../universal_files/carusel";
+import { safePhotos } from "../server/safe_data";
 export default function Safety() {
   const [intro, setIntro] = useState({ title: false, elem: true });
-
+  const navigate=useNavigate();
   const proc = useRef(null);
   const ref = useRef(null);
   const obs = () => {
@@ -48,7 +49,7 @@ export default function Safety() {
 
   return (
     <>
-      <div className="darkness"></div>
+      <div className="darkness" onClick={()=>navigate('../')}></div>
       <div className="product-details" id="safety">
         <Link to="../">x</Link>
 
@@ -58,13 +59,7 @@ export default function Safety() {
           <h2>UWAGA - CHROŃ SWOJĄ INWESTYCJĘ!!!!</h2>
         </CSSTransition>
         <Line></Line>
-        <div className="photo-carusel">
-          <img
-            src="/images/uchwyt_silnik dziobowy.jpg"
-            alt="zdjęcie uchywtu"
-            loading="lazy"
-          />
-        </div>
+        <Carusel elements={safePhotos}/>
         <p>
           Inwestowanie w sprzęt skanujący <b>TO JEST TO</b> w co wkładasz{" "}
           <u>dużo myśli, czasu i pieniędzy,</u> dlatego zalecamy, a wręcz gorąco

@@ -25,12 +25,12 @@ export const router = createBrowserRouter(
       children:[
         {
           path: ":id",
-          element: <Suspense fallback= {<div>Loading...</div>}><ProductData /></Suspense>,
+          element: <Suspense fallback= {<div className="darkness">Loading...</div>}><ProductData /></Suspense>,
           loader: ({params})=>{return params.id}
         },
         {
           path: "safety",
-          element: <Suspense fallback= {<div>Loading...</div>}><Safety /></Suspense> 
+          element: <Suspense fallback= {<div className="darkness">Loading...</div>}><Safety /></Suspense> 
         }
       ]
     },
